@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {Form} from "formik";
+import "../styles/Obozy.scss";
 import { camps1 } from "../data/camps7";
 import { camps2 } from "../data/camps10";
 import { camps3 } from "../data/camps13";
@@ -31,8 +32,8 @@ const Obozy = ()=> {
 
     return (
         <>
-        <form onSubmit={handleSubmit}>
-        <label htmlFor="children">Wybierz wiek:</label>
+        <form className="camps-form" onSubmit={handleSubmit}>
+        <label htmlFor="children">Wybierz wiek dziecka:</label>
 
     <select value={age} onChange={(e)=>setAge(e.target.value)} id="child-age">
         <option value="7-9">7-9 lat</option>
@@ -40,18 +41,23 @@ const Obozy = ()=> {
         <option value="13-15">13-15 lat</option>
         <option value="wszystkie">wszystkie</option>
     </select>
-            <button type="submit" >
-                Submit
+            <button type="submit" className="btn-camps" >
+                Potwierdź
             </button>
         </form>
             <div>{data.map((el, index)=>{
                 const{name, description, date, foto} = el;
                 return(
                     <>
-                    <div>{name}</div>
-                    <div>{description}</div>
-                    <div>{date}</div>
-                        <img src={foto} />
+                        <div className="camps-container">
+                            <img src={foto} />
+                   <div className="camps-box">
+                       <h2>{name}</h2>
+                        <p>{date}</p>
+                   <p>{description}</p>
+                   </div>
+
+                        </div>
                     </>
 
 

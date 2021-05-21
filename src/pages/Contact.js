@@ -28,7 +28,7 @@ const Contact = () => (
                 <Form>
                     <h2>Skontaktuj się z nami</h2>
                     <h4> wprowadź swój e-mail</h4>
-                    <Field type="email" name="email"/>
+                    <Field  type="email" name="email"/>
                     <ErrorMessage name="email" component="div" />
                     <h4> wiadomość</h4>
                     <Field as="textarea" cols={50} rows={7} MaxLength={300} name="message"/>

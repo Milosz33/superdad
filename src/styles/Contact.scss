@@ -6,21 +6,28 @@
     padding-left: 20px;
     color: #545555;
 
+textarea{
+  border-radius: 20px;
+}
+
+    input{
+      border-radius: 10px;
+    }
     .form-btn {
       background-color: #faa640;
-      margin-left: 80px;
+
       padding: 10px;
       width: 170px;
       border-radius: 10px;
     }
 
     .form-btn:hover {
-      color: #ee5a6d;
-      background-color: #00ff00;
+      background-color: white;
     }
 
     .contact-box {
-      background-color: #50caef;
+      border-radius: 20px;
+      background-color: #faa640;
       padding: 10px;
       margin-right: 200px;
       margin-top: 40px;
@@ -49,7 +56,12 @@
     padding-top: 50px;
     color: #4f5052;
 
-
+textarea{
+  border-radius: 20px;
+}
+input{
+  border-radius: 10px;
+}
 
     .form-btn {
       background-color: #faa640;
@@ -59,12 +71,12 @@
       border-radius: 10px;
     }
     .form-btn:hover {
-      color: #ee5a6d;
-      background-color: #00ff00;
+      background-color: white;
     }
 
     .contact-box {
-      background-color: #50caef;
+      border-radius: 20px;
+      background-color:#faa640;
       padding: 10px;
       margin-right: 200px;
       margin-top: 40px;
