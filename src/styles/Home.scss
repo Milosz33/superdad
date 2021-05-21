@@ -1,0 +1,25 @@
+
+
+/* Small screens*/
+@media (max-width: 767.98px){
+  .joke-box{
+    margin-top: 40px;
+    padding: 20px 20px;
+  }
+}
+
+
+.joke-box{
+  text-align: center;
+  color: #f3e3e9;
+}
+
+.joke-btn {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #faa640;
+}
+
+.joke-btn:hover {
+  background-color: #f3e3e9;
+}

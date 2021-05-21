@@ -26,6 +26,7 @@
 import React, {useState} from "react";
 import { slide as Menu } from "react-burger-menu";
 import {NavLink} from "react-router-dom";
+import "../styles/Hamburger.scss"
 
 export default props => {
 

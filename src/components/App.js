@@ -16,18 +16,24 @@ import MainMenu from "./MainMenu";
 
 
 
+
 function App() {
 
     return (
+
         <Router>
+
             <Menu></Menu>
             <MainMenu></MainMenu>
         <Switch>
+
             <Route exact path={"/"} component={Home}/>
             <Route exact path={"/obozy"} component={Obozy}/>
             <Route exact path={"/contact"} component={Contact}/>
             <Route exact path={"/MyStory"} component={MyStory}/>
+
         </Switch>
+
     </Router>
     )
 }
