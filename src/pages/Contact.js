@@ -2,10 +2,12 @@ import React from 'react';
 import {Formik, Form, Field, ErrorMessage, FormikContext} from 'formik';
 import "../styles/Contact.scss"
 import {NavLink} from "react-router-dom";
+import { db } from "../components/firebase";
 
-const Contact = () => (
+const Contact = () => {
+
+return(
     <div className="form-container">
-
         <Formik
             initialValues={{ email: '', message: '' }}
             validate={values => {
@@ -15,23 +17,30 @@ const Contact = () => (
                 } else if (
                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                 ) {
-                    errors.email = 'Invalid email address';
+                    errors.email = 'podany adres jest niepoprawny';
                 }
                 return errors;
             }}
             onSubmit={(values, { resetForm }) => {
-               resetForm()
+
+                db.collection("contacts").add({
+                      email : values.email,
+                      message : values.message
+                })
+
+                resetForm()
             }}
         >
             {({ isSubmitting }) => (
                 <>
+
                 <Form>
                     <h2>Skontaktuj się z nami</h2>
                     <h4> wprowadź swój e-mail</h4>
-                    <Field  type="email" name="email"/>
+                    <Field  placeholder="e-mail" type="email" name="email"/>
                     <ErrorMessage name="email" component="div" />
                     <h4> wiadomość</h4>
-                    <Field as="textarea" cols={50} rows={7} MaxLength={300} name="message"/>
+                    <Field placeholder="Tutaj wpisz swoją wiadomość" as="textarea" cols={50} rows={7} MaxLength={300} name="message"/>
                     <div>
                     <button className="form-btn" type="submit" disabled={isSubmitting}>
                         Wyślij
@@ -51,6 +60,6 @@ const Contact = () => (
             )}
         </Formik>
     </div>
-);
+)}
 
 export default Contact;

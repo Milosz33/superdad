@@ -1,9 +1,6 @@
 import "../styles/MainMenu.scss";
-import { slide as Menu } from 'react-burger-menu'
 import  {NavLink} from "react-router-dom";
 import "../styles/Hamburger.scss"
-// import Menu from "../components/burger";
-// import {NavLink} from "react-router-dom";
 import React from "react";
 
 const MainHeader = () => {

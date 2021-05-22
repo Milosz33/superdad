@@ -1,3 +1,5 @@
+@import "./variables";
+
 /* Small screens*/
 @media (max-width: 767.98px) {
   .form-container {
@@ -7,19 +9,18 @@
     color: #545555;
 
 textarea{
-  border-radius: 20px;
+  //border-radius: 20px;
   width: 80%;
 }
 
-    input{
-      border-radius: 10px;
-    }
+    //input{
+    //  border-radius: 10px;
+    //}
     .form-btn {
-      background-color: #faa640;
-
+      background-color: $menu-color;
       padding: 10px;
       width: 170px;
-      border-radius: 10px;
+      //border-radius: 10px;
     }
 
     .form-btn:hover {
@@ -27,8 +28,8 @@ textarea{
     }
 
     .contact-box {
-      border-radius: 20px;
-      background-color: #faa640;
+      //border-radius: 20px;
+      background-color: $menu-color;
       padding: 10px;
       width: 35%;
       //margin-right: 200px;
@@ -58,19 +59,19 @@ textarea{
     padding-top: 50px;
     color: #4f5052;
 
-textarea{
-  border-radius: 20px;
-}
-input{
-  border-radius: 10px;
-}
+//textarea{
+//  border-radius: 20px;
+//}
+//input{
+//  border-radius: 10px;
+//}
 
     .form-btn {
       background-color: #faa640;
       margin-left: 80px;
       padding: 10px;
       width: 170px;
-      border-radius: 10px;
+      //border-radius: 10px;
     }
     .form-btn:hover {
       background-color: white;

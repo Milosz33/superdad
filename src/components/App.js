@@ -1,15 +1,16 @@
-
-import Button from "./Button/Button"
 import "../styles/MainMenu.scss"
 import Home from "../pages/Home"
 import Obozy from "../pages/Obozy"
 import MyStory from "../pages/MyStory";
 import Contact from "../pages/Contact";
-import Slideshow from "./Slideshow";
 import Menu from "./Hamburger";
 import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
 import React from "react";
 import MainMenu from "./MainMenu";
+import Hello from './Hello';
+import NotFound from './NotFound';
+
+
 
 
 
@@ -31,6 +32,8 @@ function App() {
             <Route exact path={"/obozy"} component={Obozy}/>
             <Route exact path={"/contact"} component={Contact}/>
             <Route exact path={"/MyStory"} component={MyStory}/>
+            <Route exact path="/" component={Hello} />
+            <Route component={NotFound} />
 
         </Switch>
 
@@ -40,4 +43,4 @@ function App() {
 
 
 
-export default App
+export default App;

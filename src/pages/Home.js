@@ -23,12 +23,11 @@ const Home = () => {
             <div className="joke-box" >{joke}</div>
             <button className="joke-btn"
                     onClick={fetchJoke}
-                    style={{ display: 'block', margin: '0 auto' }}
             >
-                Joke of a Day
+                Try me
             </button>
         </>
     );
 };
 
-export default Home;
+export default Home

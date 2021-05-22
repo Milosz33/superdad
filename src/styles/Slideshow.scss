@@ -1,4 +1,4 @@
-
+@import "./variables";
 
 
 /* Small screens*/
@@ -6,53 +6,28 @@
 .slide-container {
 
   .each-slide1 {
-      margin: 0 auto;
-      height: 50vh;
-      width: 80%;
-      background-image: url("../components/images/slide_2.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
+    @include slideMobile;
+    background-image: url("../components/images/slide_2.jpg");
     }
+
     .each-slide2 {
-      margin: 0 auto;
-      height: 50vh;
-      width: 80%;
+      @include slideMobile;
       background-image: url("../components/images/slide_3.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
-
     }
+
     .each-slide3 {
-      margin: 0 auto;
-      height: 50vh;
-      width: 80%;
+      @include slideMobile;
       background-image: url("../components/images/slide_4.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
-
     }
+
     .each-slide4 {
-      margin: 0 auto;
-      height: 50vh;
-      width: 80%;
+      @include slideMobile;
       background-image: url("../components/images/slide_1.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
-
     }
+
     .each-slide5 {
-      margin: 0 auto;
-      height: 50vh;
-      width: 80%;
+      @include slideMobile;
       background-image: url("../components/images/slide_5.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-
-
     }
   }
 }
@@ -62,65 +37,32 @@
 @media (min-width: 768px) {
 
   .slide-container {
-margin-bottom: 20px;
+    margin-bottom: 20px;
     margin-top: -20px;
-    .each-slide1 {
-      margin: 0 auto;
-      height: 70vh;
-      width: 80vw;
-      background-image: url("../components/images/slide_2.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
 
+    .each-slide1 {
+      @include slideDesktop;
+      background-image: url("../components/images/slide_2.jpg");
     }
 
     .each-slide2 {
-      margin: 0 auto;
-      height: 70vh;
-      width: 80vw;
+      @include slideDesktop;
       background-image: url("../components/images/slide_3.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-
-
     }
 
     .each-slide3 {
-      margin: 0 auto;
-      height: 70vh;
-      width: 80vw;
+      @include slideDesktop;
       background-image: url("../components/images/slide_4.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-
-
     }
 
     .each-slide4 {
-      margin: 0 auto;
-      height: 70vh;
-      width: 80vw;
+      @include slideDesktop;
       background-image: url("../components/images/slide_1.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-
-
     }
 
     .each-slide5 {
-      margin: 0 auto;
-      height: 70vh;
-      width: 80vw;
+      @include slideDesktop;
       background-image: url("../components/images/slide_5.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-
-
     }
   }
 }

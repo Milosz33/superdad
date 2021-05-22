@@ -1,4 +1,4 @@
-
+@import "./variables";
 
 
 
@@ -45,7 +45,7 @@
 
   a{
     position: relative;
-    color: #faa640;
+    color: $menu-color;
     text-decoration: none;
     padding-top: 20px;
   }
