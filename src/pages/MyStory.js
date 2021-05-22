@@ -1,5 +1,4 @@
 import React from "react";
-import programmer from "../components/images/programmer.jpg"
 import bartender from "../components/images/bartender3.jpg"
 import skatepark from "../components/images/skatepark.jpg"
 import snowboarders from "../components/images/snowboarders.jpg"

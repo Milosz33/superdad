@@ -1,6 +1,6 @@
 import "../styles/MainMenu.scss";
 import  {NavLink} from "react-router-dom";
-import "../styles/Hamburger.scss"
+import "../styles/Hamburger.scss";
 import React from "react";
 
 const MainHeader = () => {

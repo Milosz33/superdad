@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import {Form} from "formik";
 import "../styles/Obozy.scss";
 import { camps1 } from "../data/camps7";
 import { camps2 } from "../data/camps10";

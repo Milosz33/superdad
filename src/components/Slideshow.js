@@ -19,27 +19,22 @@ const Slideshow = () => {
             <Slide>
                 <div className="each-slide1">
                     <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
-                        {/*<span>Slide 1</span>*/}
                     </div>
                 </div>
                 <div className="each-slide2">
                     <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
-                        {/*<span>Slide 2</span>*/}
                     </div>
                 </div>
                 <div className="each-slide3">
                     <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
-                        {/*<span>Slide 3</span>*/}
                     </div>
                 </div>
                 <div className="each-slide4">
                     <div style={{'backgroundImage': `url(${slideImages[3]})`}}>
-                        {/*<span>Slide 4</span>*/}
                     </div>
                 </div>
                 <div className="each-slide5">
                     <div style={{'backgroundImage': `url(${slideImages[4]})`}}>
-                        {/*<span>Slide 5</span>*/}
                     </div>
                 </div>
             </Slide>

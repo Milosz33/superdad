@@ -10,33 +10,19 @@ import MainMenu from "./MainMenu";
 import Hello from './Hello';
 import NotFound from './NotFound';
 
-
-
-
-
-
-
-
-
 function App() {
-
     return (
-
         <Router>
-
             <Menu></Menu>
             <MainMenu></MainMenu>
         <Switch>
-
             <Route exact path={"/"} component={Home}/>
             <Route exact path={"/obozy"} component={Obozy}/>
             <Route exact path={"/contact"} component={Contact}/>
             <Route exact path={"/MyStory"} component={MyStory}/>
             <Route exact path="/" component={Hello} />
             <Route component={NotFound} />
-
         </Switch>
-
     </Router>
     )
 }

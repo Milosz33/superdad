@@ -21,13 +21,13 @@ return(
                 }
                 return errors;
             }}
-            onSubmit={(values, { resetForm }) => {
+            onSubmit={(values, { resetForm, setSubmitting }) => {
 
                 db.collection("contacts").add({
                       email : values.email,
                       message : values.message
                 })
-
+                setSubmitting(false)
                 resetForm()
             }}
         >
