@@ -47,17 +47,17 @@ const Obozy = ()=> {
             <div>{data.map((el, index)=>{
                 const{name, description, date, foto} = el;
                 return(
-                    <>
-                        <div className="camps-container">
-                            <img src={foto} />
-                   <div className="camps-box">
+
+                    <article className="camps-container">
+                        <div className="camps-box">
                        <h2>{name}</h2>
                         <p>{date}</p>
+                            <img src={foto} />
                    <p>{description}</p>
                    </div>
 
-                        </div>
-                    </>
+                        </article>
+
 
 
                 )

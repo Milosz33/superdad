@@ -17,11 +17,11 @@ const Home = () => {
         fetchJoke();
     }, []);
     return (
-        <>
+        <main>
             <Slideshow></Slideshow>
             <div className="joke-box" >{joke}</div>
             <button className="joke-btn" onClick={fetchJoke}>Try me</button>
-        </>
+        </main>
     );
 };
 

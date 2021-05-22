@@ -9,18 +9,13 @@
     color: #545555;
 
 textarea{
-  //border-radius: 20px;
   width: 80%;
 }
-
-    //input{
-    //  border-radius: 10px;
-    //}
     .form-btn {
       background-color: $menu-color;
       padding: 10px;
       width: 170px;
-      //border-radius: 10px;
+
     }
 
     .form-btn:hover {
@@ -28,11 +23,10 @@ textarea{
     }
 
     .contact-box {
-      //border-radius: 20px;
       background-color: $menu-color;
       padding: 10px;
       width: 35%;
-      //margin-right: 200px;
+
       margin-top: 40px;
       margin-bottom: 30px;
       color: #575555;
@@ -59,19 +53,12 @@ textarea{
     padding-top: 50px;
     color: #4f5052;
 
-//textarea{
-//  border-radius: 20px;
-//}
-//input{
-//  border-radius: 10px;
-//}
 
     .form-btn {
       background-color: #faa640;
       margin-left: 80px;
       padding: 10px;
       width: 170px;
-      //border-radius: 10px;
     }
     .form-btn:hover {
       background-color: white;
@@ -82,13 +69,13 @@ textarea{
       background-color:#faa640;
       padding: 10px;
       margin-right: 200px;
+      margin-left: 200px;
       margin-top: 40px;
       color: #575555;
 
       h4 {
         color: #3a3b3a;
       }
-
     }
   }
 }

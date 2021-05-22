@@ -13,13 +13,13 @@ const MainMenu = (props) => {
 
     return (
 
-        <div className="menu-container">
+        <header className="menu-container">
              <MainHeader></MainHeader>
             <NavLink exact to={"/"}>Home</NavLink>
             <NavLink exact to={"/mystory"}>O mnie</NavLink>
             <NavLink exact to={"/obozy"}>Obozy</NavLink>
             <NavLink exact to={"/contact"}>Contact</NavLink>
-        </div>
+        </header>
 
 
     );
