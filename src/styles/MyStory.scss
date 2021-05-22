@@ -2,9 +2,18 @@
 
 //desktop
 @media (min-width: 768px) {
-  .story-container {
 
-    .profession {
+  body{
+    background-color: #b8b7ad;
+    height: 100vh;
+      section {
+        background-image: url("../components/images/paddleboard.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat-y;
+        height: 100%;
+
+        .profession {
       display: flex;
       padding: 50px 50px;
 
@@ -44,6 +53,7 @@
       }
     }
   }
+}
 }
 
 

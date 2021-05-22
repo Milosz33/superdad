@@ -1,17 +1,18 @@
 import React from "react";
-import bartender from "../components/images/bartender3.jpg"
+import bartender from "../components/images/bartender.jpg"
 import skatepark from "../components/images/skatepark.jpg"
 import snowboarders from "../components/images/snowboarders.jpg"
 import windsurfing from "../components/images/windsurfing.jpg"
 import kitesurfing from "../components/images/kitesurfing.jpg"
 import "../styles/MyStory.scss";
+import Slideshow from "../components/Slideshow";
 
 
 const MyStory = () => {
     return (
-        <div className="story-container">
-
-
+        <>
+            <h2>Kim jestem</h2>
+        <section>
             <div className="profession">
                <div className="image-box"> <img src={kitesurfing} alt="kitesurfing" /></div>
                    <div className="story-box">
@@ -60,7 +61,9 @@ const MyStory = () => {
             </div>
 
 
-        </div>
+        </section>
+
+        </>
     )
 }
 

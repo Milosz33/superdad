@@ -31,18 +31,17 @@ const Obozy = ()=> {
 
     return (
         <>
-        <form className="camps-form" onSubmit={handleSubmit}>
+            <section className="camps">
+            <h2> Wybierz obóz dla swojego dziecka</h2>
+        <form className="age-select" onSubmit={handleSubmit}>
         <label htmlFor="children">Wybierz wiek dziecka:</label>
 
-    <select value={age} onChange={(e)=>setAge(e.target.value)} id="child-age">
+    <select onClick={handleSubmit} value={age} onChange={(e)=>setAge(e.target.value)} id="child-age">
         <option value="7-9">7-9 lat</option>
         <option value="10-12">10-12 lat</option>
         <option value="13-15">13-15 lat</option>
         <option value="wszystkie">wszystkie</option>
     </select>
-            <button type="submit" className="btn-camps" >
-                Potwierdź
-            </button>
         </form>
             <div>{data.map((el, index)=>{
                 const{name, description, date, foto} = el;
@@ -57,12 +56,10 @@ const Obozy = ()=> {
                    </div>
 
                         </article>
-
-
-
                 )
 
             })} </div>
+            </section>
         </>
     );
 }

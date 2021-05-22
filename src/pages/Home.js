@@ -1,6 +1,7 @@
 import Slideshow from '../components/Slideshow';
 import "../styles/Home.scss"
 import React, { useEffect, useState } from 'react';
+import Footer from "../components/Footer";
 
 
 const url = 'https://api.chucknorris.io/jokes/random';
@@ -19,10 +20,12 @@ const Home = () => {
     return (
         <main>
             <Slideshow></Slideshow>
-            <div className="joke-box" >{joke}</div>
+
+            <p className="joke-box" >{joke}</p>
             <button className="joke-btn" onClick={fetchJoke}>Try me</button>
         </main>
-    );
+
+    )
 };
 
-export default Home
+export default Home;

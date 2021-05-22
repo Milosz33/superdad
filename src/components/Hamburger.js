@@ -26,12 +26,13 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import {NavLink} from "react-router-dom";
-import "../styles/Hamburger.scss"
+import "../styles/Hamburger.scss";
+
 
 export default props => {
     return (
-        // Pass on our props
-        <Menu {...props}>
+
+        <Menu  {...props} >
             <NavLink  className="menu-item" to="/">
                 Home
             </NavLink>
@@ -48,7 +49,8 @@ export default props => {
                 Contact
             </NavLink>
         </Menu>
-    );
-};
+    )
+}
+
 
 
