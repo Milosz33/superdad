@@ -1,7 +1,7 @@
 import Slideshow from '../components/Slideshow';
 import "../styles/Home.scss"
 import React, { useEffect, useState } from 'react';
-import Footer from "../components/Footer";
+
 
 
 const url = 'https://api.chucknorris.io/jokes/random';
@@ -17,10 +17,10 @@ const Home = () => {
     useEffect(() => {
         fetchJoke();
     }, []);
+
     return (
         <main>
             <Slideshow></Slideshow>
-
             <p className="joke-box" >{joke}</p>
             <button className="joke-btn" onClick={fetchJoke}>Try me</button>
         </main>

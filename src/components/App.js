@@ -1,25 +1,27 @@
+
+import React from "react";
+import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Hello from './Hello';
+import NotFound from './NotFound';
+import MainHeader from "./MainHeader";
 import "../styles/MainHeader.scss"
 import Home from "../pages/Home"
 import Obozy from "../pages/Obozy"
 import MyStory from "../pages/MyStory";
 import Contact from "../pages/Contact";
 import Menu from "./Hamburger";
-import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
-import React from "react";
-import MainMenu from "./MainHeader";
-import Hello from './Hello';
-import NotFound from './NotFound';
-import Slideshow from "./Slideshow";
-import MainHeader from "./MainHeader";
-import Hamburger from "./Hamburger";
-import Footer from "./Footer";
 
+library.add(fab, faCheckSquare, faCoffee);
 
 function App() {
     return (
         <Router>
 
             <Menu></Menu>
+
             <MainHeader></MainHeader>
 
         <Switch>
@@ -30,7 +32,6 @@ function App() {
             <Route exact path="/" component={Hello} />
             <Route component={NotFound} />
         </Switch>
-            <Footer></Footer>
     </Router>
 
     )

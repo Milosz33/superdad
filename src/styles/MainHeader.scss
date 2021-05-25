@@ -22,10 +22,28 @@ header {
   color: #faed26;
   border-left: 5px solid whitesmoke;
   border-top: 5px solid whitesmoke;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 
+img{
+  margin-left: 50px;
+}
 
- a  {
+  h1:hover{
+    transform: scale(1.5, 1.5);
+  }
+
+  img:hover{
+    transform: scale(1.5,1.5);
+
+   background-color: #faed26;
+  }
+
+.navigation{
+  display: flex;
+  list-style: none;
+}
+
+  a  {
    display: flex;
     list-style: none;
     color:whitesmoke;
@@ -34,6 +52,9 @@ header {
   }
   a:hover {
     color: yellow;
+  }
+  a.home-heart-icon{
+    color: whitesmoke;
   }
 
   h1 {
