@@ -3,10 +3,16 @@
 //desktop
 @media (min-width: 768px) {
 
-  body{
-    background-color: #b8b7ad;
-    height: 100vh;
+
+  h2:first-of-type{
+    color: whitesmoke;
+    font-size: 2rem;
+
+
+  }
       section {
+     background-color: #7f7f64;
+        width: 100%;
 
 
         .profession {
@@ -35,7 +41,7 @@
         border: 5px solid white;
 
         h2 {
-          color: #5a5a57;
+          color: $h1-color;
           margin-bottom: 50px;
           font-size: 2rem;
           font-family: "Ubuntu Mono";
@@ -44,13 +50,11 @@
         p {
           font-size: 20px;
         }
-
-
       }
     }
   }
 }
-}
+
 
 
 

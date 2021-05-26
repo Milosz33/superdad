@@ -7,7 +7,7 @@
     padding: 50px;
 
     label {
-      color: $menu-color;
+      color: $h1-color;
       padding-right: 20px;
       font-size: 1.5rem;
     }
@@ -18,7 +18,7 @@
     }
 
     select:hover {
-      background-color: $menu-color;
+      background-color: $h1-color;
     }
 
     .btn-camps {
@@ -48,6 +48,8 @@
         color: #6f6f6e;
       }
 
+
+
       p:first-of-type {
         padding: 30px;
         color: red;
@@ -72,21 +74,28 @@
 
 
 
-  .camps{
-
+  section{
     width: 100%;
-    background-color: #f3e3e9;
+    background-image: url("../components/images/mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
     .age-select {
-      width: 30%;
+      display: flex;
+      margin-top: 50px;
+      padding: 50px;
+      width: 40%;
       text-align: center;
-      padding: 10px;
-      background-color: grey;
+
 
       label {
-        color: #9D8D8F;
+        color: whitesmoke;
         font-weight: bolder;
         padding-right: 20px;
         font-size: 1.5rem;
+
       }
 
       select {
@@ -96,27 +105,25 @@
       }
 
       select:hover {
-        background-color: #faed26;
+        background-color: $h1-color;
       }
 
     }
 
-    .camps-container {
+    article {
       display: flex;
       flex-wrap: wrap;
       width: 80%;
       margin: 50px;
-      border-bottom: 3px solid grey;
-      border-right: 3px solid grey;
-
-
+      border-bottom: 3px solid whitesmoke;
+      border-right: 3px solid whitesmoke;
 
       .camps-box {
         padding: 50px;
 
         h2 {
           padding: 30px;
-          color: #6f6f6e;
+          color: #f3e3e9;
         }
 
         p:first-of-type {
@@ -127,10 +134,10 @@
         }
 
         p:last-of-type {
+          color: #f3e3e9;
           padding: 30px;
         }
       }
-
       img {
         width: 100%;
       }

@@ -34,11 +34,10 @@ const Obozy = ()=> {
 
     return (
         <>
-            <div className="camps">
-            <h2> Wybierz obóz dla swojego dziecka</h2>
+            <section>
+            <h2>Campy dla Twojego dziecka</h2>
         <form className="age-select" onSubmit={handleSubmit}>
-        <label htmlFor="children">Wybierz wiek dziecka:</label>
-
+        <label htmlFor="children">wiek dziecka:</label>
     <select onClick={handleSubmit} value={age} onChange={(e)=>setAge(e.target.value)} id="child-age">
         <option value="7-9">7-9 lat</option>
         <option value="10-12">10-12 lat</option>
@@ -50,7 +49,7 @@ const Obozy = ()=> {
                 const{name, description, date, foto} = el;
                 return(
 
-                    <article className="camps-container">
+                    <article>
                         <div className="camps-box">
                        <h2>{name}</h2>
                         <p>{date}</p>
@@ -63,7 +62,7 @@ const Obozy = ()=> {
                 )
 
             })} </div>
-            </div>
+            </section>
         </>
     );
 }

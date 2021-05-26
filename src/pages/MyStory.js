@@ -5,13 +5,13 @@ import snowboarders from "../components/images/snowboarders.jpg"
 import windsurfing from "../components/images/windsurfing.jpg"
 import kitesurfing from "../components/images/kitesurfing.jpg"
 import "../styles/MyStory.scss";
-import Slideshow from "../components/Slideshow";
+
 
 
 const MyStory = () => {
     return (
         <>
-            <h2>Kim jestem</h2>
+            <h2>O mnie</h2>
         <section>
             <div className="profession">
                <div className="image-box"> <img src={kitesurfing} alt="kitesurfing" /></div>

@@ -23,6 +23,10 @@ const Home = () => {
             <Slideshow></Slideshow>
             <p className="joke-box" >{joke}</p>
             <button className="joke-btn" onClick={fetchJoke}>Try me</button>
+            <div className={"banner"}>
+                <p> what kind of father you are ??</p>
+                <p> are you want to be a Real Hero for your kids ??</p>
+            </div>
         </main>
 
     )

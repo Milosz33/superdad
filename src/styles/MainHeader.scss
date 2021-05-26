@@ -2,7 +2,7 @@
 
 
 
-/* Small screens*/
+///* Small screens*/
 @media (max-width: 767.98px) {
 a{
   display: none;
@@ -12,31 +12,17 @@ a{
 //desktop
 @media (min-width: 768px) {
 
-header {
+header{
   display: flex;
   justify-content: space-between;
+  background-color: #7f7f64;
   list-style: none;
   font-weight: bold;
-  //font-family: Samanata;
   letter-spacing: 2px;
-  color: #faed26;
   border-left: 5px solid whitesmoke;
   border-top: 5px solid whitesmoke;
   margin-bottom: 50px;
 
-img{
-  margin-left: 50px;
-}
-
-  h1:hover{
-    transform: scale(1.5, 1.5);
-  }
-
-  img:hover{
-    transform: scale(1.5,1.5);
-
-   background-color: #faed26;
-  }
 
 .navigation{
   display: flex;
@@ -51,17 +37,33 @@ img{
    padding: 10px;
   }
   a:hover {
-    color: yellow;
+    transform: scale(1.5, 1.5);
   }
-  a.home-heart-icon{
-    color: whitesmoke;
+  h1:hover {
+    color: #f3e3e9;
   }
 
   h1 {
+    background-image: url("../components/images/kite-surf.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
     padding-left: 50px;
     padding-bottom: 50px;
-    color: #f7fafc;
+    color: $h1-color;
     font-size: 3rem;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+
   }
   }
 }

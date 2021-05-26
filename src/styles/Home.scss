@@ -30,6 +30,14 @@
 
   @media (min-width: 768px) {
 
+    main {
+      display: block;
+      margin-bottom: 100px;
+      background-image: url("../components/images/mountain.jpg");
+      background-size: contain;
+      width: 100%;
+      height: 100vh;
+    }
 
       .joke-box {
         display: none;
