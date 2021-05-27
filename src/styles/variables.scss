@@ -1,22 +1,8 @@
-
+$white-color: whitesmoke;
 $menu-color: #faa640;
 $h1-color: #e3590e;
 $header-background: #7f7f64;
+$body-background: #a1a18c;
 
-@mixin slideDesktop(){
-  margin: 0 auto;
-  height: 70vh;
-  width: 80vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-@mixin slideMobile () {
-  margin: 0 auto;
-  height: 50vh;
-  width: 80%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 

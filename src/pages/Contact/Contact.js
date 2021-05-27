@@ -1,11 +1,10 @@
 import React from 'react';
-import {Formik, Form, Field, ErrorMessage, FormikContext} from 'formik';
-import "../styles/Contact.scss"
-import {NavLink} from "react-router-dom";
-import { db } from "../components/firebase";
+import {Formik, Form, Field, ErrorMessage} from 'formik';
+import "./Contact.scss"
+import { db } from "../../components/firebase";
+
 
 const Contact = () => {
-
 return(
     <div className="form-container">
         <Formik
@@ -33,29 +32,21 @@ return(
         >
             {({ isSubmitting }) => (
                 <>
-
-                <Form>
+                    <Form>
                     <h2>Skontaktuj się z nami</h2>
+                    <h4>Imię</h4>
+                    <Field className="name" placeholder="Twoje imię" type="text" name="name"/>
                     <h4> wprowadź swój e-mail</h4>
-                    <Field  placeholder="e-mail" type="email" name="email"/>
-                    <ErrorMessage name="email" component="div" />
+                    <Field className="email" placeholder="e-mail" type="email" name="email"/>
+                    <ErrorMessage className="error-message" name="email" component="div" />
                     <h4> wiadomość</h4>
-                    <Field placeholder="Tutaj wpisz swoją wiadomość" as="textarea" cols={50} rows={7} MaxLength={300} name="message"/>
+                    <Field className="message" placeholder="Tutaj wpisz swoją wiadomość" as="textarea" cols={50} rows={7} MaxLength={300} name="message"/>
                     <div>
                     <button className="form-btn" type="submit" disabled={isSubmitting}>
                         Wyślij
                     </button>
                     </div>
                 </Form>
-                    <div className="contact-box">
-                        <h4> Dane kontaktowe:</h4>
-                        <p>    SuperStary GMBH </p>
-                    <p> ulica Słoneczna 123 </p>
-                    <p> 12345 Los Angeles </p>
-                    <p> tel: 123456789 </p>
-                    <p> e-mail: real@fuckinHero.com </p>
-                        <NavLink exact to={"/"}>www.superstary.com</NavLink>
-                    </div>
                 </>
             )}
         </Formik>

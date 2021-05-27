@@ -1,0 +1,159 @@
+@import "../../styles/variables";
+
+/* Small screens*/
+@media (max-width: 767.98px) {
+  .camps{
+    width: 100%;
+    background-color:$header-background;
+
+h2{
+  color: #f3e3e9;
+}
+
+    .age-select {
+      display: flex;
+      margin-top: 50px;
+      padding: 50px;
+      width: 40%;
+      text-align: center;
+
+
+      label {
+        color: whitesmoke;
+        font-weight: bolder;
+        padding-right: 20px;
+        font-size: 1.5rem;
+
+      }
+
+      select {
+        padding: 10px 50px;
+        background-color: whitesmoke;
+        font-weight: bolder;
+      }
+
+      select:hover {
+        background-color: $h1-color;
+      }
+
+    }
+
+    article {
+      display: block;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 50px;
+      border: 3px solid whitesmoke;
+
+      .camp-box {
+        padding: 50px;
+
+        h2 {
+          padding: 30px;
+          color: #f3e3e9;
+        }
+
+        p:first-of-type {
+          padding: 30px;
+          color: red;
+          text-decoration: underline;
+          font-weight: bolder;
+        }
+
+        p:last-of-type {
+          color: #f3e3e9;
+          padding: 30px;
+        }
+      }
+      a{
+        font-size: 1.3rem;
+        color:$h1-color;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+//desktop
+@media (min-width: 768px) {
+
+  .camps{
+    width: 100%;
+    background-image: url("../../components/images/mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .age-select {
+      display: flex;
+      margin-top: 50px;
+      padding: 50px;
+      width: 40%;
+      text-align: center;
+
+      label {
+        color: whitesmoke;
+        font-weight: bolder;
+        padding-right: 20px;
+        font-size: 1.5rem;
+      }
+
+      select {
+        padding: 10px 50px;
+        background-color: whitesmoke;
+        font-weight: bolder;
+      }
+
+      select:hover {
+        background-color: $h1-color;
+      }
+    }
+
+    article {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 50px;
+      border: 3px solid whitesmoke;
+
+      .camp-box {
+        padding: 50px;
+
+        h2 {
+          padding: 30px;
+          color: #f3e3e9;
+        }
+
+        p:first-of-type {
+          font-size: 1.5rem;
+          padding: 30px;
+          color: red;
+          text-decoration: underline;
+          font-weight: bolder;
+        }
+
+        p:last-of-type {
+          color: #f3e3e9;
+          padding: 30px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      a{
+        font-size: 1.5rem;
+        color:$h1-color;
+      }
+      a:hover{
+        color: black;
+      }
+    }
+  }
+}
+
+

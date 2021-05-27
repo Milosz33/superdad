@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+
+/* Small screens*/
+@media (max-width: 767.98px){
+  .footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+
+    .footer__text {
+      margin-top: 2rem;
+      margin-right: 5%;
+      font-size: 0.7rem;
+      line-height: 0.8rem;
+      letter-spacing: 0;
+
+    }
+
+    .footer__socials {
+      margin-top: 2rem;
+      position: relative;
+
+      a {
+        color: whitesmoke;
+        width: 2rem;
+        margin-right: 1.25rem;
+
+      }
+
+      a:hover {
+        color: $h1-color;
+      }
+    }
+  }
+}
+
+
+//desktop//
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    position: relative;
+    margin-top:20px;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+
+    .footer__text {
+      margin-right: 5%;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      letter-spacing: 0;
+
+    }
+
+    .footer__socials {
+      position: relative;
+
+      a {
+        color: whitesmoke;
+        width: 2rem;
+        margin-right: 1.25rem;
+
+      }
+
+      a:hover {
+        color: $h1-color;
+      }
+    }
+  }
+}

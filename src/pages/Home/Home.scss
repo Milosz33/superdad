@@ -1,0 +1,93 @@
+@import "../../styles/variables";
+
+/* Small screens*/
+@media (max-width: 767.98px) {
+
+  main {
+    display: block;
+    margin-bottom: 100px;
+    background-image: url("../../components/images/krok.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+    li {
+      display: none;
+    }
+
+    .joke {
+      top:400px;
+      left: 100px;
+      padding: 30px;
+      text-align: center;
+      color: #f3e3e9;
+    }
+
+    .joke-btn {
+      margin-left: 50px;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      background-color: $menu-color;
+    }
+
+    .joke-btn:hover {
+      background-color: #f3e3e9;
+    }
+  .banner{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    height: 50vh;
+    p{
+      margin-top: 50px;
+      margin-left: 50px;
+      animation: blink-animation 3s steps(5, start) ;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+  }
+  }
+
+  //desktop
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    margin-bottom: 100px;
+    background-image: url("../../components/images/mountain.jpg");
+    background-repeat: repeat-x;
+    background-size: 50%;
+    width: 100%;
+    height: 100vh;
+
+
+    .joke {
+      display: none;
+    }
+
+    .joke-btn {
+      display: none;
+    }
+    .banner{
+      font-size: 2.5rem;
+      color: whitesmoke;
+      height: 50vh;
+      p{
+        margin-top: 100px;
+        margin-left: 50px;
+        animation: blink-animation 3s steps(5, start) ;
+
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      }
+    }
+  }
+
+

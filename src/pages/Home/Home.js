@@ -1,5 +1,5 @@
-import Slideshow from '../components/Slideshow';
-import "../styles/Home.scss"
+
+import "./Home.scss"
 import React, { useEffect, useState } from 'react';
 
 
@@ -20,15 +20,14 @@ const Home = () => {
 
     return (
         <main>
-            <Slideshow></Slideshow>
-            <p className="joke-box" >{joke}</p>
+            <p className="joke" >{joke}</p>
             <button className="joke-btn" onClick={fetchJoke}>Try me</button>
             <div className={"banner"}>
-                <p> what kind of father you are ??</p>
-                <p> are you want to be a Real Hero for your kids ??</p>
+                <p>What kind of father you are ??</p>
+                <p>Are you want to be a Real Hero for your kids ??</p>
+                <p>You are in the right place!!</p>
             </div>
         </main>
-
     )
 };
 

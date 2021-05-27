@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+/* Small screens*/
+@media (max-width: 767.98px) {
+  .form-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    color: #545555;
+
+    .error-message{
+      color:$h1-color;
+      font-size: 1.1rem;
+    }
+
+    .name, .email, .message{
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+     .message{
+       width:70%;
+     }
+    .form-btn {
+      background-color: $menu-color;
+      padding: 10px;
+      width: 170px;
+    }
+
+    .form-btn:hover {
+      background-color: white;
+    }
+  }
+}
+
+
+
+//desktop
+@media (min-width: 768px) {
+  .form-container {
+    display: flex;
+    background-color:$header-background;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-between;
+    margin-left-left: 100px;
+    margin-top: 50px;
+    color: #4f5052;
+
+    h4, h2{
+      margin-left: 50px;
+    }
+
+    .error-message{
+      color:$h1-color;
+      font-size: 1.1rem;
+    }
+
+     .name, .email, .message{
+      margin-left: 50px;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .form-btn {
+      background-color: whitesmoke;
+      margin-left: 80px;
+      margin-top: 10px;
+      padding: 10px;
+      width: 170px;
+      font-size: 1.2rem;
+    }
+    .form-btn:hover {
+      background-color: $h1-color;
+    }
+    }
+  }

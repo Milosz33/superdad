@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import React from "react";
-import "../styles/NotFound.scss"
+import "./NotFound.scss"
 
 
 const NotFound = () => (
@@ -10,7 +10,6 @@ const NotFound = () => (
         <NavLink to="/">
             Go Home
         </NavLink>
-
     </div>
 );
 

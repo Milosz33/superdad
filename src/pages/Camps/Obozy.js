@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import "../styles/Obozy.scss";
-import { camps1 } from "../data/camps7";
-import { camps2 } from "../data/camps10";
-import { camps3 } from "../data/camps13";
+import React, { useState} from "react";
+import "./Obozy.scss";
+import { camps1 } from "../../data/camps7";
+import { camps2 } from "../../data/camps10";
+import { camps3 } from "../../data/camps13";
 import {NavLink} from "react-router-dom";
 
 
@@ -33,8 +33,7 @@ const Obozy = ()=> {
     }
 
     return (
-        <>
-            <section>
+        <section className="camps">
             <h2>Campy dla Twojego dziecka</h2>
         <form className="age-select" onSubmit={handleSubmit}>
         <label htmlFor="children">wiek dziecka:</label>
@@ -48,22 +47,19 @@ const Obozy = ()=> {
             <div>{data.map((el, index)=>{
                 const{name, description, date, foto} = el;
                 return(
-
                     <article>
-                        <div className="camps-box">
+                        <div className="camp-box">
                        <h2>{name}</h2>
                         <p>{date}</p>
                             <img  alt="camps-image" src={foto} />
                    <p>{description}</p>
                             <NavLink exact to={"/contact"}>zapisz się</NavLink>
                    </div>
-
-                        </article>
+                    </article>
                 )
-
-            })} </div>
+            })}
+            </div>
             </section>
-        </>
     );
 }
 
