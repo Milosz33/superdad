@@ -1,5 +1,4 @@
 
-
 export const camps1 = [
     {
         name: "Obóz Letni dla małolatów",
