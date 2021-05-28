@@ -15,13 +15,13 @@ library.add(fab, fas, faCheckSquare, faCoffee);
 
 
 
-const MainHeader = (props) => {
+const MainHeader = () => {
     return (
         <header>
             <NavLink exact to={"/mystory"}><h1>SuperStary</h1></NavLink>
             <ul className="navigation">
                 <li><NavLink exact to={"/"}><FontAwesomeIcon icon={["fas", "house-user" ]} size="2x" ></FontAwesomeIcon></NavLink></li>
-                <li><NavLink exact to={"/obozy"}><FontAwesomeIcon icon={["fas", "globe-americas"]} size="2x"></FontAwesomeIcon></NavLink></li>
+                <li><NavLink exact to={"/camps"}><FontAwesomeIcon icon={["fas", "globe-americas"]} size="2x"></FontAwesomeIcon></NavLink></li>
                 <li><NavLink exact to={"/movies"}><FontAwesomeIcon icon={["fas", "play"]} size="2x" ></FontAwesomeIcon></NavLink></li>
                 <li><NavLink exact to={"/gallery"}><FontAwesomeIcon icon={["fas", "images"]} size="2x" ></FontAwesomeIcon></NavLink></li>
                 <li><NavLink exact to={"/contact"}><FontAwesomeIcon icon={["fas", "envelope"]} size="2x" ></FontAwesomeIcon></NavLink></li>

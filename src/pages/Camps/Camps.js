@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import "./Obozy.scss";
+import "./Camps.scss";
 import { camps1 } from "../../data/camps7";
 import { camps2 } from "../../data/camps10";
 import { camps3 } from "../../data/camps13";
@@ -9,7 +9,7 @@ const allCamps = [
     ...camps1, ...camps2, ...camps3
 ]
 
-const Obozy = ()=> {
+const Camps = ()=> {
     const [age, setAge] = useState('7-9')
     const [data, setData] = useState(camps1)
     const handleSubmit = (e)=> {
@@ -60,4 +60,4 @@ const Obozy = ()=> {
     );
 }
 
-export default Obozy;
+export default Camps;

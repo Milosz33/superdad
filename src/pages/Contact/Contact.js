@@ -8,7 +8,7 @@ const Contact = () => {
 return(
     <div className="form-container">
         <Formik
-            initialValues={{ email: '', message: '' }}
+            initialValues={{ name:'', email: '', message: '' }}
             validate={values => {
                 const errors = {};
                 if (!values.email) {
@@ -24,7 +24,8 @@ return(
 
                 db.collection("contacts").add({
                       email : values.email,
-                      message : values.message
+                      message : values.message,
+                      name : values.name
                 })
                 setSubmitting(false)
                 resetForm()

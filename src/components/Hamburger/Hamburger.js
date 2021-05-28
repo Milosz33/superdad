@@ -7,8 +7,12 @@ import "./Hamburger.scss";
 const Hamburger = () => {
     return (
         <Menu >
-            <NavLink  className="menu-item" to="/">
+            <NavLink className="menu-item" to="/">
                 Home
+            </NavLink>
+
+            <NavLink className="menu-item" to="/MyStory">
+                About me
             </NavLink>
 
             <NavLink className="menu-item" to="/gallery" >
@@ -16,19 +20,21 @@ const Hamburger = () => {
             </NavLink>
 
             <NavLink   className="menu-item" to="/obozy">
-                Obozy
+                Camps
+            </NavLink>
+
+            <NavLink  className="menu-item" to="/movies">
+                Movies
             </NavLink>
 
             <NavLink  className="menu-item" to="/contact">
                 Contact
-            </NavLink>
-            <NavLink  className="menu-item" to="/movies">
-                Movies
             </NavLink>
         </Menu>
     )
 }
 
 export default Hamburger;
+
 
 
