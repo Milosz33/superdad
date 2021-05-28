@@ -5,9 +5,6 @@ import { camps2 } from "../../data/camps10";
 import { camps3 } from "../../data/camps13";
 import {NavLink} from "react-router-dom";
 
-
-
-
 const allCamps = [
     ...camps1, ...camps2, ...camps3
 ]
