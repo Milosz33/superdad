@@ -27,8 +27,7 @@ h2{
       }
 
       select {
-        padding: 10px 50px;
-        background-color: whitesmoke;
+        background-color: $white-color;
         font-weight: bolder;
       }
 
@@ -46,7 +45,7 @@ h2{
       border: 3px solid whitesmoke;
 
       .camp-box {
-        padding: 50px;
+
 
         h2 {
           padding: 30px;
@@ -54,7 +53,6 @@ h2{
         }
 
         p:first-of-type {
-          padding: 30px;
           color: red;
           text-decoration: underline;
           font-weight: bolder;
@@ -62,7 +60,7 @@ h2{
 
         p:last-of-type {
           color: #f3e3e9;
-          padding: 30px;
+
         }
       }
       a{
