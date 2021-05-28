@@ -51,7 +51,7 @@ const Obozy = ()=> {
                         <div className="camp-box">
                        <h2>{name}</h2>
                         <p>{date}</p>
-                            <img  alt="camps-image" src={foto} />
+                            <img  alt="camps-img" src={foto} />
                    <p>{description}</p>
                             <NavLink exact to={"/contact"}>zapisz się</NavLink>
                    </div>
