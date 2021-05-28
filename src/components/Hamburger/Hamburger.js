@@ -4,32 +4,32 @@ import {NavLink} from "react-router-dom";
 import "./Hamburger.scss";
 
 
-const Hamburger = () => {
+const Hamburger = (props) => {
     return (
-        <Menu >
-            <NavLink className="menu-item" to="/">
+        <Menu {...props}>
+            <a className="menu-item" href="/">
                 Home
-            </NavLink>
+            </a>
 
-            <NavLink className="menu-item" to="/MyStory">
+            <a className="menu-item" href="/MyStory">
                 About me
-            </NavLink>
+            </a>
 
-            <NavLink className="menu-item" to="/gallery" >
+            <a className="menu-item" href="/gallery" >
                 Gallery
-            </NavLink>
+            </a>
 
-            <NavLink   className="menu-item" to="/camps">
+            <a   className="menu-item" href="/camps">
                 Camps
-            </NavLink>
+            </a>
 
-            <NavLink  className="menu-item" to="/movies">
+            <a  className="menu-item" href="/movies">
                 Movies
-            </NavLink>
+            </a>
 
-            <NavLink  className="menu-item" to="/contact">
+            <a  className="menu-item" href="/contact">
                 Contact
-            </NavLink>
+            </a>
         </Menu>
     )
 }
