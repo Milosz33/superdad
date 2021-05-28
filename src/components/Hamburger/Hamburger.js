@@ -19,7 +19,7 @@ const Hamburger = () => {
                 Gallery
             </NavLink>
 
-            <NavLink   className="menu-item" to="/obozy">
+            <NavLink   className="menu-item" to="/camps">
                 Camps
             </NavLink>
 
