@@ -71,9 +71,10 @@
         }
 
         .story-box {
+          color:$white-color;
           margin-left: 50px;
           width: 50%;
-          background-color: #70c5f3;
+          background-color:$header-background;
           padding-left: 50px;
           padding-right: 50px;
           border: 5px solid $white-color;

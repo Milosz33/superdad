@@ -1,6 +1,5 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
-import {NavLink} from "react-router-dom";
 import "./Hamburger.scss";
 
 
