@@ -20,11 +20,11 @@ const MainHeader = () => {
         <header>
             <NavLink exact to={"/mystory"}><h1>SuperStary</h1></NavLink>
             <ul className="navigation">
-                <li><NavLink exact to={"/"}><FontAwesomeIcon icon={["fas", "house-user" ]} size="2x" ></FontAwesomeIcon></NavLink></li>
-                <li><NavLink exact to={"/camps"}><FontAwesomeIcon icon={["fas", "globe-americas"]} size="2x"></FontAwesomeIcon></NavLink></li>
-                <li><NavLink exact to={"/movies"}><FontAwesomeIcon icon={["fas", "play"]} size="2x" ></FontAwesomeIcon></NavLink></li>
-                <li><NavLink exact to={"/gallery"}><FontAwesomeIcon icon={["fas", "images"]} size="2x" ></FontAwesomeIcon></NavLink></li>
-                <li><NavLink exact to={"/contact"}><FontAwesomeIcon icon={["fas", "envelope"]} size="2x" ></FontAwesomeIcon></NavLink></li>
+                <li key={"house"}><NavLink exact to={"/"}><FontAwesomeIcon icon={["fas", "house-user" ]} size="2x" ></FontAwesomeIcon></NavLink></li>
+                <li key={"globe"}><NavLink exact to={"/camps"}><FontAwesomeIcon icon={["fas", "globe-americas"]} size="2x"></FontAwesomeIcon></NavLink></li>
+                <li key={"play"}><NavLink exact to={"/movies"}><FontAwesomeIcon icon={["fas", "play"]} size="2x" ></FontAwesomeIcon></NavLink></li>
+                <li key={"images"}><NavLink exact to={"/gallery"}><FontAwesomeIcon icon={["fas", "images"]} size="2x" ></FontAwesomeIcon></NavLink></li>
+                <li key={"envelope"}><NavLink exact to={"/contact"}><FontAwesomeIcon icon={["fas", "envelope"]} size="2x" ></FontAwesomeIcon></NavLink></li>
             </ul>
         </header>
     )

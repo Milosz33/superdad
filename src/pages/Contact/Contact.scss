@@ -38,7 +38,7 @@
 @media (min-width: 768px) {
   .form-container {
     display: flex;
-    background-color:$header-background;
+    background-color:$h1-color;
     width: 100%;
     height: 70vh;
     justify-content: space-between;
@@ -53,6 +53,7 @@
     .error-message{
       color:$h1-color;
       font-size: 1.1rem;
+      margin-left: 50px;
     }
 
      .name, .email, .message{

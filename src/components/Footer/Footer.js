@@ -17,9 +17,13 @@ const Footer =()=> {
                 <a href='https://www.twitter.com/'>
                     <FontAwesomeIcon icon={["fab", "twitter" ]} size="2x" ></FontAwesomeIcon>
                 </a>
+                <a href='https://www.youtube.com/channel/UCkqpKshAIWaGiEia1zdQ6bA'>
+                    <FontAwesomeIcon icon={["fab", "youtube"]}></FontAwesomeIcon>
+                </a>
                 <a href='https://superstary.herokuapp.com/'>
                     www.superstary.herokuapp.com
                 </a>
+
             </div>
         </footer>
     );

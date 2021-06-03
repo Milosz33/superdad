@@ -67,7 +67,7 @@
   header {
     display: flex;
     justify-content: space-between;
-    background-color: #7f7f64;
+    background-color: $header-background;
     list-style: none;
     font-weight: bold;
     letter-spacing: 2px;
@@ -84,7 +84,7 @@
     a {
       display: flex;
       list-style: none;
-      color: whitesmoke;
+      color: $menu-color;
       text-decoration: none;
       padding: 10px;
     }

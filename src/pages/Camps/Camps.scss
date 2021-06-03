@@ -85,9 +85,8 @@ h2{
 
   .camps{
     width: 100%;
-    background-image: url("../../components/images/mountain.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color:$h1-color;
+
 
     .age-select {
       display: flex;
@@ -118,7 +117,7 @@ h2{
       display: flex;
       flex-wrap: wrap;
       width: 80%;
-      margin: 50px;
+      margin: 0 auto;
       border: 3px solid whitesmoke;
 
       .camp-box {
@@ -126,7 +125,7 @@ h2{
 
         h2 {
           padding: 30px;
-          color: #f3e3e9;
+          color: $header-background;
         }
 
         p:first-of-type {
@@ -147,7 +146,7 @@ h2{
       }
       a{
         font-size: 1.5rem;
-        color:$h1-color;
+        color:$body-background;
       }
       a:hover{
         color: black;
